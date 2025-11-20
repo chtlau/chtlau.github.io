@@ -1,69 +1,119 @@
-<!--
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣳⠦⢖⣒⢲⣲⡦⢤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⡴⢻⣦⡲⠤⡀⠹⡋⢷⡇⣿⡷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⢼⢠⣿⡟⠃⢀⣠⡄⠱⠀⣿⣿⠛⢻⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠠⣿⣿⣛⡀⠚⠟⠛⠁⠀⠀⠙⠈⣧⣰⣽⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⣠⣾⣿⡟⠏⠀⠀⠀⠀⠀⠀⡀⠀⣸⡟⢃⠼⢧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⢰⣿⣿⡿⢆⣀⢠⡶⠀⠀⠀⣠⠆⠐⠁⠀⠃⢀⣼⢧⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠈⠛⠳⡾⡾⠛⠀⠀⠀⡎⠁⠀⠀⠀⡀⠀⠈⠁⠀⠳⡀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⢣⡀⠀⣠⠖⠁⠀⠀⠀⠀⢠⡟⢦⡀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠈⠣⠊⠁⠀⠀⠀⠀⠀⢠⠟⠇⢀⣿⣄⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⡾⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠴⠀⠃⠀⠀⠀⢼⡏⠘⢇⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⢠⣇⡀⠀⠀⠀⠀⠀⢀⠤⠒⠁⠀⢀⡄⠀⠀⠀⢰⠊⠀⠀⣾⡄⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠸⡿⢤⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⡾⠂⠀⠀⠘⠉⠀⠀⣴⢻⢷⡀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⢿⠬⠑⠤⠀⠀⠀⠀⠀⠀⣠⠞⠁⠀⠀⠀⢀⠀⠀⠐⠃⢘⣿⣷⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⣼⡇⠀⠀⠀⠀⠀⠀⠀⡘⠁⡀⠀⠀⠀⢠⡟⠀⠀⠀⠟⣈⣻⣿⡇
-⠀⠀⠀⠀⠀⠀⠀⠀⣻⡇⠀⠀⣸⡁⠀⠀⠀⢷⣸⠀⠀⠀⠀⣯⠀⣄⣫⣤⣺⣿⣿⡿⠀
-⠀⠀⠀⠀⠀⣀⠤⠚⣹⡂⠀⢰⣿⣿⣦⠤⠤⠾⡟⠀⠀⠀⣼⣿⣧⣿⣿⣿⣿⣿⠟⠁⠀
-⢀⣠⠒⠋⠉⢁⣠⠴⣻⠁⢠⣼⠛⠁⠀⠀⠀⠀⣷⠀⠀⢠⣿⣿⣿⣿⣿⣿⠟⠉⠀⠀⠀
-⠈⠛⠛⠒⠉⠉⣀⢤⠃⢀⣿⠷⠴⠤⣄⣀⡀⠀⡿⠀⢀⣾⣿⣿⣿⠿⠛⠁⠀⠀⠀⠀⠀
-⠀⠀⣠⠤⠒⠉⡠⠃⠀⢨⠏⠀⠀⠀⠀⠀⠉⠉⡇⠀⢸⡟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠈⠛⠧⣶⠟⢠⠀⣠⠋⠀⠀⠀⠀⠀⠀⠀⢠⠇⠀⢸⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠿⢴⡷⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⡞⠀⠀⢸⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⡄⢀⡀⢸⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⣇⣸⡥⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
--->
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Thomas Lau</title>
-    <link rel="canonical" href="https://lauthomas.com/">
-    
-    <!-- Preload critical assets -->
-    <link rel="preload" href="c.css" as="style">
-    <link rel="preload" href="/img/favicon.ico" as="image">
-    
-    <!-- Preconnect to external domains -->
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <!-- Local Font: TransportNew-Medium -->
-    <link rel="stylesheet" href="font/TransportNew-Medium.otf">
-    <!-- Main stylesheet -->
-    <link rel="stylesheet" href="c.css">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lauthomas.com/">
-    <meta property="og:title" content="Thomas Lau">
-    <meta property="og:image" content="https://lauthomas.com/img/og-image.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://lauthomas.com/">
-    <meta property="twitter:title" content="Thomas Lau">
-    <meta property="twitter:image" content="https://lauthomas.com/img/og-image.png">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3SZ96H3EJH"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-3SZ96H3EJH');
-    </script>
+    <title>Thomas Lau - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            h3[style*="rgb(60, 49, 91)"] {
+                color: rgb(171, 159, 242) !important;
+            }
+            h3[style*="#10368F"] {
+                color: #4A90E2 !important;
+            }
+        }
+    </style>
 </head>
-<body style="margin:0;height:100dvh;display:grid;place-items:center;overflow:hidden">
-  <img src="img/seal.svg" width="64">
+<body class="bg-white dark:bg-black text-gray-900 dark:text-gray-100 antialiased transition-colors">
+    <div class="min-h-screen">
+        <!-- Header Section -->
+        <header class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16 sm:py-20 lg:py-24">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
+                    Thomas Lau
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl">
+                    Product designer specializing in fintech and web3. I design intuitive, high-performance experiences for trading, wallets, and financial apps.
+                </p>
+            </div>
+        </header>
+
+        <!-- Select Work Section -->
+        <section class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pb-16 sm:pb-20 lg:pb-24">
+            <h2 class="text-2xl sm:text-3xl font-semibold mb-12 sm:mb-16 tracking-tight">
+                Select work
+            </h2>
+            
+            <div class="space-y-24 sm:space-y-32">
+                <!-- Phantom Perps -->
+                <article class="group">
+                    <div class="aspect-video bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mb-6">
+                        <video class="w-full h-full object-cover" autoplay muted loop playsinline>
+                            <source src="video/perps.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl sm:text-3xl font-semibold mb-3 tracking-tight" style="color: rgb(60, 49, 91);">
+                            Phantom Perps
+                        </h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-6 uppercase tracking-wide">
+                            Product Design Lead
+                        </p>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                            Go long or short in just a few taps. Powered by Hyperliquid.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Phantom Terminal -->
+                <article class="group">
+                    <div class="aspect-video bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mb-6">
+                        <video class="w-full h-full object-cover" autoplay muted loop playsinline>
+                            <source src="video/terminal.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl sm:text-3xl font-semibold mb-3 tracking-tight" style="color: rgb(60, 49, 91);">
+                            Phantom Terminal
+                        </h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-6 uppercase tracking-wide">
+                            Product Design Lead
+                        </p>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                            Pro-level trading on the web
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Crypto.com App -->
+                <article class="group">
+                    <div class="aspect-video bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mb-6">
+                        <img src="img/cdc.jpg" alt="Crypto.com App" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl sm:text-3xl font-semibold mb-3 tracking-tight" style="color: #10368F;">
+                            Crypto.com App
+                        </h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-6 uppercase tracking-wide">
+                            Product Design Manager
+                        </p>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                            An all-in-one platform for trading, earning yield, and using crypto in the real world.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-12 sm:py-16">
+            <div class="border-t border-gray-200 dark:border-gray-800 pt-12 sm:pt-16">
+                <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 text-gray-600 dark:text-gray-400">
+                    <a href="https://www.linkedin.com/in/tom-lau/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
+                        LinkedIn
+                    </a>
+                    <a href="mailto:c.h.thomas.lau@gmail.com" class="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
+                        c.h.thomas.lau@gmail.com
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
+</html>
