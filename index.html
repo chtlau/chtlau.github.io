@@ -1,121 +1,116 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <title>Thomas Lau - Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        @media (prefers-color-scheme: dark) {
-            h3[style*="rgb(60, 49, 91)"] {
-                color: rgb(171, 159, 242) !important;
-            }
-            h3[style*="#10368F"] {
-                color: #4A90E2 !important;
-            }
-        }
-    </style>
+  <title>Thomas Lau</title>
+  <style>
+    @font-face {
+      font-family: 'TransportNew';
+      src: url('font/TransportNew-Medium.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-size: 14px;
+    }
+
+    body {
+      background: #ffffff;
+      color: #000000;
+      font-family: 'TransportNew', sans-serif;
+      line-height: 1.5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 560px;
+      width: 100%;
+      padding: 1.5rem;
+    }
+
+    h1 {
+      font-size: 14px;
+      font-weight: normal;
+      margin-bottom: 1em;
+    }
+
+    p + p {
+      margin-top: 1em;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
+    }
+
+    a:hover {
+      text-decoration-thickness: 2px;
+    }
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(0.35em);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .line {
+      opacity: 0;
+      animation: fade-in 0.7s ease forwards;
+    }
+
+    .line:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .line:nth-child(2) {
+      animation-delay: 0.35s;
+    }
+
+    .line:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .line {
+        opacity: 1;
+        animation: none;
+        transform: none;
+      }
+    }
+  </style>
 </head>
-<body class="bg-white dark:bg-black text-gray-900 dark:text-gray-100 antialiased transition-colors">
-    <div class="min-h-screen">
-        <!-- Header Section -->
-        <header class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16 sm:py-20 lg:py-24">
-            <div class="max-w-3xl">
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
-                    Thomas Lau
-                </h1>
-                <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl">
-                    Product designer specializing in fintech and web3. I design intuitive, high-performance experiences for trading, wallets, and financial apps.
-                </p>
-            </div>
-        </header>
-
-        <!-- Select Work Section -->
-        <section class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pb-16 sm:pb-20 lg:pb-24">
-            <h2 class="text-2xl sm:text-3xl font-semibold mb-12 sm:mb-16 tracking-tight">
-                Select work
-            </h2>
-            
-            <div class="space-y-24 sm:space-y-32">
-                <!-- Phantom Perps -->
-                <article class="group">
-                    <div class="aspect-video bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mb-6">
-                        <video class="w-full h-full object-cover" autoplay muted loop playsinline>
-                            <source src="video/perps.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl sm:text-3xl font-semibold mb-3 tracking-tight" style="color: rgb(60, 49, 91);">
-                            Phantom Perps
-                        </h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-6 uppercase tracking-wide">
-                            Product Design Lead
-                        </p>
-                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                            Go long or short in just a few taps. Powered by Hyperliquid.
-                        </p>
-                    </div>
-                </article>
-
-                <!-- Phantom Terminal -->
-                <article class="group">
-                    <div class="aspect-video bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mb-6">
-                        <video class="w-full h-full object-cover" autoplay muted loop playsinline>
-                            <source src="video/terminal.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl sm:text-3xl font-semibold mb-3 tracking-tight" style="color: rgb(60, 49, 91);">
-                            Phantom Terminal
-                        </h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-6 uppercase tracking-wide">
-                            Product Design Lead
-                        </p>
-                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                            Pro-level trading on the web
-                        </p>
-                    </div>
-                </article>
-
-                <!-- Crypto.com App -->
-                <article class="group">
-                    <div class="aspect-video bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden mb-6">
-                        <img src="img/cdc.jpg" alt="Crypto.com App" class="w-full h-full object-cover">
-                    </div>
-                    <div>
-                        <h3 class="text-2xl sm:text-3xl font-semibold mb-3 tracking-tight" style="color: #10368F;">
-                            Crypto.com App
-                        </h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-6 uppercase tracking-wide">
-                            Product Design Manager
-                        </p>
-                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                            An all-in-one platform for trading, earning yield, and using crypto in the real world.
-                        </p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- Footer Section -->
-        <footer class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-12 sm:py-16">
-            <div class="border-t border-gray-200 dark:border-gray-800 pt-12 sm:pt-16">
-                <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 text-gray-600 dark:text-gray-400">
-                    <a href="https://www.linkedin.com/in/tom-lau/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
-                        LinkedIn
-                    </a>
-                    <a href="mailto:c.h.thomas.lau@gmail.com" class="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
-                        c.h.thomas.lau@gmail.com
-                    </a>
-                </div>
-            </div>
-        </footer>
-    </div>
+<body>
+  <div class="container">
+    <h1 class="line">Thomas Lau</h1>
+    <p class="line">
+      Head of Design at <a href="https://trustwallet.com/" target="_blank" rel="noopener noreferrer">Trust Wallet</a>.
+      Previously Design Lead at <a href="https://phantom.com/" target="_blank" rel="noopener noreferrer">Phantom</a>,
+      and Design Manager at <a href="https://crypto.com/" target="_blank" rel="noopener noreferrer">Crypto.com</a>.
+    </p>
+    <p class="line">
+      Born in Hong Kong. Based in Vancouver.
+    </p>
+  </div>
 </body>
 </html>
