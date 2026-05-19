@@ -9,7 +9,7 @@
   <style>
     @font-face {
       font-family: 'TransportNew';
-      src: url('font/TransportNew-Medium.otf') format('opentype');
+      src: url('font/TransportNew-Light.otf') format('opentype');
       font-weight: normal;
       font-style: normal;
     }
@@ -57,10 +57,12 @@
       color: inherit;
       text-decoration: underline;
       text-underline-offset: 0.15em;
+      text-decoration-color: color-mix(in srgb, currentColor 50%, transparent);
+      transition: text-decoration-color 0.12s ease-out;
     }
 
     a:hover {
-      text-decoration-thickness: 2px;
+      text-decoration-color: currentColor;
     }
 
     @keyframes fade-in {
@@ -96,6 +98,10 @@
         opacity: 1;
         animation: none;
         transform: none;
+      }
+
+      a {
+        transition: none;
       }
     }
   </style>
