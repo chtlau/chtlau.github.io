@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, nofollow">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <title>Tom Lau</title>
   <style>
@@ -20,9 +19,22 @@
       box-sizing: border-box;
     }
 
+    :root {
+      --bg: #ffffff;
+      --text: #000000;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --text: #ffffff;
+      }
+    }
+
     html {
       font-size: 14px;
       overflow: hidden;
+      color-scheme: light dark;
     }
 
     body {
@@ -30,8 +42,8 @@
       min-height: 100vh;
       min-height: 100svh;
       overflow: hidden;
-      background: #ffffff;
-      color: #000000;
+      background: var(--bg);
+      color: var(--text);
       font-family: 'TransportNew', sans-serif;
       line-height: 1.5;
       display: flex;
@@ -117,7 +129,7 @@
       and Design Manager at <a href="https://crypto.com/" target="_blank" rel="noopener noreferrer">Crypto.com</a>.
     </p>
     <p class="line">
-      Born in Hong Kong. Based in Vancouver.
+      Born in Hong Kong. Based in Canada.
     </p>
   </div>
 </body>
